@@ -28,16 +28,16 @@ angular.module('myApp', ['ngSwiftype']);
 Use in your DOM. 
 
 ```html
-<swiftyp-autocomplete engine-key="your_read_only_engine_key">
-  <input type="text" ng-modle="term">
+<swiftyp-autocomplete engine-key="your_read_only_engine_key" swiftype-term="term">
+  <input type="text" ng-model="term">
 </swiftyp-autocomplete>
 ```
 
 or
 
 ```html
-<div class="swiftype-autocomplete" engine-key="your_read_only_engine_key">
-  <input type="text" ng-modle="term">
+<div class="swiftype-autocomplete" engine-key="your_read_only_engine_key"  swiftype-term="term">
+  <input type="text" ng-model="term">
 </div>
 ```
 
@@ -56,3 +56,7 @@ Currently it supports following options by config in attributes:
 ```html
 fetch-fields='{"books": ["title","genre","published_on"]}'
 ```
+
+## Where to find the engine key?
+
+![GitHub Logo](/docs/engine_key_location.png)

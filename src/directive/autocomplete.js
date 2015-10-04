@@ -72,6 +72,9 @@ directive('swiftypeAutocomplete', ['ngSwiftype.api', function(api) {
   return {
     restrict: 'CE',
     controller: SwiftypeController,
+    scope:{
+      'term' : '=swiftypeTerm'
+    },
     link: function(scope, element, attributes) {
 
 
